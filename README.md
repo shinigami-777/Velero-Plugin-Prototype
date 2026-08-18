@@ -8,8 +8,8 @@ This is a prototype Headlamp plugin designed to manage and monitor [Velero](http
   - Backups
   - Restores
   - Schedules
-  - Backup Storage Locations (BSL)
-  - Volume Snapshot Locations (VSL)
+  - Backup Storage Locations
+  - Volume Snapshot Locations
 - **Interactive Actions:** Create new backups and restores directly through the UI using dedicated dialog components (`CreateBackupDialog`, `CreateRestoreDialog`).
 - **Map Visualization:** Integrates with Headlamp's cluster map view to visually represent the relationships between Velero resources (`veleroMapSource`).
 
@@ -71,6 +71,8 @@ velero install \
 
 You can check the installation using `kubectl get pods -n velero` and `velero get backup-locations`. 
 
+<img width="950" height="137" alt="Screenshot from 2026-08-18 18-23-02" src="https://github.com/user-attachments/assets/4cd51a1f-22b5-4027-81f0-597932e78e00" />
+
 ### Running the Plugin
 1. Install dependencies
    ```
@@ -96,4 +98,21 @@ You can check the installation using `kubectl get pods -n velero` and `velero ge
 2. Put the `dist/main.js` inside `~/.config/Headlamp/plugins/velero-plugin-prototype/` folder.
 
 3. Run the headlamp application and use the plugin.
+
+### Prototype Screenshots
+
+**Dashboard View**
+<img width="1910" height="1006" alt="image" src="https://github.com/user-attachments/assets/b5c2d76d-98f8-4c86-b141-89d7b968fc9a" />
+
+**Backup Creation**
+<img width="1633" height="702" alt="Screenshot from 2026-08-18 18-26-54" src="https://github.com/user-attachments/assets/8e036b98-ec69-4832-97cf-ca53ee7338bb" />
+
+**Restore**
+<img width="1175" height="637" alt="Screenshot from 2026-08-18 18-28-00" src="https://github.com/user-attachments/assets/6105f5dc-d7de-49eb-8e89-4332cfb95473" />
+
+**Backup Storage Location**
+<img width="1643" height="271" alt="Screenshot from 2026-08-18 18-28-36" src="https://github.com/user-attachments/assets/77af751d-2c4d-45c9-a257-07329fcddc97" />
+
+**Map View**
+<img width="1502" height="625" alt="image" src="https://github.com/user-attachments/assets/ed46b2a8-429a-4f1f-9633-2030e40fc2ab" />
 
